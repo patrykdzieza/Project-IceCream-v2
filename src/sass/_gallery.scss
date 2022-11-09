@@ -1,0 +1,30 @@
+.gallery__tittle {
+  display: none;
+}
+.gallery {
+  width: 100%;
+  margin: 0 0 80px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    margin: 0 0 121px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery {
+    margin: 0 0 123px 0;
+  }
+}
+/*
+.gallery {
+  background-image: url('/images/gallery_desktop@x2.png');
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('/images/gallery_desktop@x2.png');
+  }
+
+  @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+    background-image: url('/images/gallery_desktop@x2.png');
+  }
+}*/

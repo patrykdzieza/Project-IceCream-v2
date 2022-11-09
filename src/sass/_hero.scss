@@ -1,0 +1,381 @@
+.hero {
+  background: #ffb8ca;
+  position: relative;
+  overflow-x: hidden;
+
+  &__container {
+    padding: 137px 20px 160px 20px;
+    min-width: 320px;
+  }
+
+  &__primary-div {
+    display: flex;
+  }
+
+  &__title-div {
+    width: 218px;
+    position: relative;
+    z-index: 3;
+  }
+
+  &__title {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 19px;
+  }
+
+  &__title-span {
+    font-size: 48px;
+    line-height: 0.965;
+    color: #d41443;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__button-link {
+    text-decoration: none;
+    outline: none;
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+    height: 24px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    cursor: pointer;
+    outline: none;
+
+    &--red {
+      background: #d41443;
+      color: #ffffff;
+      width: 62.4px;
+
+      &:visited {
+        color: #ffffff;
+      }
+
+      &:hover,
+      &:focus {
+        background: #c7133e;
+      }
+    }
+
+    &--white {
+      background: #ffffff;
+      color: #d41443;
+      width: 82.8px;
+
+      &:visited {
+        color: #d41443;
+      }
+
+      &:hover,
+      &:focus {
+        background: #ecebeb;
+      }
+    }
+  }
+
+  &__numbers-div {
+    display: none;
+  }
+
+  &__description {
+    display: none;
+  }
+
+  &__arrow {
+    display: none;
+  }
+
+  &__circle-pink {
+    position: absolute;
+    min-width: 346px;
+    height: 344px;
+    left: 36px;
+    bottom: 75px;
+
+  }
+
+  &__milk-jug {
+    position: absolute;
+    display: none;
+  }
+
+  &__icecream {
+    position: absolute;
+    width: 171px;
+    height: 410px;
+    bottom: 0;
+    left: 117px;
+  }
+
+  &__icecream-eat {
+    position: absolute;
+    display: none;
+  }
+}
+
+//tablet
+@media (min-width: 768px) {
+  .hero {
+    overflow-x: visible;
+    &__container {
+      padding: 6px 34px 34px 34px;
+    }
+
+    &__title-div {
+      width: 162px;
+      padding-top: 9px;
+    }
+
+    &__title {
+      font-size: 22px;
+      line-height: 1.14;
+      letter-spacing: 0.04em;
+      margin-bottom: 20px;
+    }
+
+    &__title-span {
+      font-size: 34px;
+      line-height: 0.905;
+    }
+
+    &__numbers-div {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+      margin-left: auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    &__cafes,
+    &__foodtrucks {
+      padding-right: 10px;
+      position: relative;
+    }
+
+    &__number {
+      position: relative;
+      font-family: 'Titan One';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 1.14;
+      text-align: right;
+      letter-spacing: 0.04em;
+      color: #d41443;
+      z-index: 3;
+    }
+
+    &__text {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 1.25;
+      text-align: right;
+      color: #ffffff;
+    }
+
+    &__circle-white {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 16px;
+      height: 16px;
+      background: #ffffff;
+      border-radius: 50%;
+      border: none;
+      z-index: 2;
+    }
+
+    &__description {
+      display: block;
+      width: 114px;
+      margin-top: 66px;
+      margin-left: 120px;
+      margin-bottom: 7px;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 1.5;
+      color: #ffffff;
+    }
+
+    &__arrow {
+      display: block;
+      margin-left: 120px;
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+    }
+
+    &__circle-pink {
+      min-width: 324px;
+      height: 322px;
+      left: 307px;
+      bottom: 46px;
+    }
+
+    &__milk-jug {
+      display: block;
+      width: 124px;
+      height: 126px;
+      bottom: 28px;
+      left: 34px;
+    }
+
+    &__icecream {
+      width: 143px;
+      height: 336px;
+      left: 378px;
+      bottom: 0;
+    }
+
+    &__icecream-eat {
+      display: block;
+      width: 168px;
+      height: 133px;
+      right: 34px;
+      bottom: 0;
+    }
+  }
+}
+
+//desktop
+@media (min-width: 1200px) {
+  .hero {
+    &__container {
+      padding: 68px 97px 56px 46px;
+    }
+
+    &__title-div {
+      width: 277px;
+      padding-top: 16px;
+      margin-left: 69px;
+    }
+
+    &__title {
+      font-size: 38px;
+      line-height: 1.16;
+      letter-spacing: 0.04em;
+      margin-bottom: 25px;
+    }
+
+    &__title-span {
+      font-size: 58px;
+      line-height: 0.905;
+    }
+
+    &__buttons {
+      gap: 15px;
+    }
+
+    &__button {
+      height: 40px;
+      font-size: 14px;
+      line-height: 4.5;
+
+      &--red {
+        width: 104px;
+      }
+
+      &--white {
+        width: 138px;
+      }
+    }
+
+    &__numbers-div {
+      gap: 15px;
+    }
+
+    &__cafes,
+    &__foodtrucks {
+      padding-right: 18px;
+    }
+
+    &__number {
+      font-size: 46px;
+      line-height: 1.15;
+    }
+
+    &__text {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.29;
+      text-align: right;
+      color: #ffffff;
+    }
+
+    &__circle-white {
+      width: 30px;
+      height: 30px;
+    }
+
+    &__description {
+      width: 200px;
+      margin-top: 112px;
+      margin-left: 249px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    &__arrow {
+      display: block;
+      margin-left: 249px;
+      width: 26px;
+      height: 26px;
+    }
+
+    &__circle-pink {
+      min-width: 538px;
+      height: 538px;
+      left: 475px;
+      bottom: 75px;
+    }
+
+    &__milk-jug {
+      width: 188px;
+      height: 191px;
+      bottom: 45px;
+      left: 77px;
+    }
+
+    &__icecream {
+      width: 236px;
+      height: 557px;
+      left: 594px;
+      bottom: 0;
+    }
+
+    &__icecream-eat {
+      width: 293px;
+      height: 232px;
+      right: 109px;
+      bottom: 0;
+    }
+  }
+}

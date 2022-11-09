@@ -1,0 +1,5 @@
+@function get-size($key) {
+    @return map-get($font-size, $key);
+  }
+
+

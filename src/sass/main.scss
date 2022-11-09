@@ -3,5 +3,16 @@
  * Wszystkie partials podłączamy tutaj.
  */
 
-// Style dla pliku z przykładem HTML fragmentu
-@import './example';
+@use './general';
+@import './header';
+@import './modal-window';
+@import './hero';
+@import './mobile-menu';
+@import './products';
+@import './about';
+@import './footer';
+@import './advantages';
+@import './gallery';
+// @import './customer';
+@import './slider';
+@import './contacts';

@@ -1,0 +1,49 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__close-button" type="button" data-modal-close>
+      <svg class="modal__close-icon">
+        <use href="/images/icons.svg#icon-modal_close"></use>
+      </svg>
+    </button>
+
+    <ul class="modal__content">
+      <li class="modal__item">
+        <h4 class="modal__header">Thanks for choosing</h4>
+        <img class="modal__image" src="/images/logo.png" alt="company logo" width="180px" height="45px" />
+      </li>
+      <li class="modal__item">
+        <p class="modal__paragraph">Fill out this form to get inquiry</p>
+      </li>
+      <li class="modal__item">
+        <form class="form" action="#">
+          <ul class="form__input-container">
+            <li>
+              <label for="client-name">
+                <input class="form__input-field" type="text" name="client-name" id="client-name" placeholder="Name..."
+                  class="form__input-field" />
+              </label>
+            </li>
+            <li>
+              <label for="client-email">
+                <input type="email" name="client-email" id="client-email" placeholder="E-mail..."
+                  class="form__input-field" />
+              </label>
+            </li>
+          </ul>
+          <ul class="form__checkbox-container">
+            <li>
+              <label class="form__checkbox-label" for="terms-accept">
+                <input type="checkbox" id="terms-accept" />
+                <p class="form__paragraph">
+                  I agree with <span class="form__underline">Terms</span> and
+                  <span class="form__underline">Conditions</span>
+                </p>
+              </label>
+            </li>
+            <li><button class="modal__button" type="submit" submit-close>Submit</button></li>
+          </ul>
+        </form>
+      </li>
+    </ul>
+  </div>
+</div>
